@@ -1,0 +1,120 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "53fd4b55-90ae-4779-85cd-6589837d1cf5": {
+        "id": "53fd4b55-90ae-4779-85cd-6589837d1cf5",
+        "parent": null,
+        "name": "ServerlessFileUploader.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "ServerlessFileUploader.js",
+        "cursor": {
+          "lineNumber": 25,
+          "column": 25
+        },
+        "config": {
+          "runtime": "nodejs10.x",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": [],
+          "name": "ServerlessFileUploader"
+        },
+        "triggers": [
+          {
+            "resourceName": "httpApigFileUploaderAPI",
+            "config": {
+              "defaultRoute": false,
+              "method": "PUT",
+              "route": "/upload"
+            }
+          }
+        ],
+        "lastUpdated": 1603448078691
+      }
+    },
+    "openFiles": [
+      "53fd4b55-90ae-4779-85cd-6589837d1cf5"
+    ],
+    "currentFileId": "53fd4b55-90ae-4779-85cd-6589837d1cf5",
+    "resources": {
+      "httpApigFileUploaderAPI": {
+        "name": "httpApigFileUploaderAPI",
+        "type": "API_GATEWAY",
+        "config": {
+          "apiType": 2,
+          "mode": 0,
+          "apiName": "FileUploaderAPI",
+          "stageName": "test",
+          "corsConfig": {
+            "maxAge": 0,
+            "allowCredentials": false
+          }
+        }
+      },
+      "s3alfred13": {
+        "name": "s3alfred13",
+        "type": "S3",
+        "config": {
+          "mode": 1,
+          "bucket": {
+            "name": "alfred-13"
+          }
+        }
+      }
+    },
+    "customTemplate": {
+      "syntax": "JSON",
+      "overrideDefault": false,
+      "dialect": null,
+      "definitions": null
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {
+        "mime-types": {
+          "name": "mime-types",
+          "version": "2.1.27",
+          "dev": false,
+          "language": "nodejs"
+        },
+        "aws-sdk": {
+          "name": "aws-sdk",
+          "language": "nodejs",
+          "version": "2.644.0",
+          "dev": true,
+          "notRemovable": false
+        }
+      }
+    }
+  },
+  "PROJECT_META": {
+    "sigmaVersion": "1.4.4.1",
+    "projectName": "ServerlessFileUploader",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east-1",
+    "platform": "AWS",
+    "language": "nodejs",
+    "platformRegions": {},
+    "lastSave": 1603449110716
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "serverlessfileuploader",
+      "url": "https://github.com/ryanchandler/serverlessfileuploader"
+    }
+  }
+}
